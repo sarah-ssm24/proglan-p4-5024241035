@@ -70,11 +70,25 @@ public:
 };
 
 int main() {
-    // TODO: Implementasikan main function
-    // 1. Buat dua objek ElementalDamage
-    // 2. Input damage dari user
-    // 3. Lakukan operasi matematika menggunakan operator overloading
-    // 4. Output hasil sesuai format yang diminta
-    
+    ElementalDamage dmg1, dmg2;
+
+    // Input
+    std::cout << "Masukkan damage 1 (base damage dan multiplier): ";
+    std::cin >> dmg1;
+    std::cout << "Masukkan damage 2 (base damage dan multiplier): ";
+    std::cin >> dmg2;
+
+    // Output
+    std::cout << "Damage 1: " << dmg1 << std::endl;
+    std::cout << "Damage 2: " << dmg2 << std::endl;
+
+    std::cout << "Penjumlahan: " << dmg1 + dmg2 << std::endl;
+    std::cout << "Pengurangan: " << dmg1 - dmg2 << std::endl;
+    std::cout << "Perkalian: " << dmg1 * dmg2 << std::endl;
+    std::cout << "Pembagian: " << dmg1 / dmg2 << std::endl;
+
+    std::cout << "Apakah sama? " << (dmg1 == dmg2 ? "Ya" : "Tidak") << std::endl;
+
     return 0;
 }
+
